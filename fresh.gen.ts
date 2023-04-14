@@ -10,10 +10,13 @@ import * as $products from "./routes/api/products.ts";
 
 import * as $2 from "./routes/index.tsx";
 import * as $$0 from "./islands/Counter.tsx";
+
 import * as $about from "./routes/about/index.tsx";
 
 import * as $users from "./routes/user/index.tsx";
 import * as $user from "./routes/user/[user].tsx";
+
+import * as $github from "./routes/github/[username].tsx";
 
 const manifest = {
   routes: {
@@ -27,6 +30,8 @@ const manifest = {
 
     "./routes/user/index.tsx": $users,
     "./routes/user/[user].tsx": $user,
+
+    "./routes/github/[username].tsx": $github,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
