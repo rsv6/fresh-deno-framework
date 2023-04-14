@@ -16,7 +16,8 @@ import * as $about from "./routes/about/index.tsx";
 import * as $users from "./routes/user/index.tsx";
 import * as $user from "./routes/user/[user].tsx";
 
-import * as $github from "./routes/github/[username].tsx";
+import * as $github from "./routes/github/index.tsx";
+import * as $githubUser from "./routes/github/[username].tsx";
 
 const manifest = {
   routes: {
@@ -31,7 +32,8 @@ const manifest = {
     "./routes/user/index.tsx": $users,
     "./routes/user/[user].tsx": $user,
 
-    "./routes/github/[username].tsx": $github,
+    "./routes/github/index.tsx": $github,
+    "./routes/github/[username].tsx": $githubUser,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
